@@ -1,5 +1,5 @@
 {
-  "workspaceKeybindings.swift-repl.enabled": true,
+  "workspaceKeybindings.repl.enabled": true,
   "editor.defaultFormatter": "swiftlang.swift-vscode",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": false,

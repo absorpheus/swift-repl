@@ -43,13 +43,13 @@ To achieve functionality similar to Replit, add these entries to your keybinding
     "key": "cmd+enter",
     "command": "workbench.action.tasks.runTask",
     "args": "build",
-    "when": "editorTextFocus && editorLangId == swift && config.workspaceKeybindings.swift-repl.enabled"
+    "when": "editorTextFocus && (editorLangId == 'swift' || editorLangId == 'typescript') && config.workspaceKeybindings.repl.enabled"
   },
   {
     "key": "cmd+enter",
-    "command": "workbench.action.tasks.restartTask",
-    "args": "build",
-    "when": "taskRunning && editorTextFocus && editorLangId == swift && config.workspaceKeybindings.swift-repl.enabled"
+    "command": "workbench.action.tasks.terminate",
+    "args": "terminateAll",
+    "when": "taskRunning && editorTextFocus && (editorLangId == 'swift' || editorLangId == 'typescript') && config.workspaceKeybindings.repl.enabled"
   }
 ]
 ```
